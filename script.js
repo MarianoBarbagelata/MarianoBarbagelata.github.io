@@ -51,21 +51,6 @@ $(document).ready(function(){
 			}
 		}
 	});
-	$('.scrollup').hide();
-
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 200) {
-			$('.scrollup').fadeIn();
-		} else {
-			$('.scrollup').fadeOut();
-		}
-	});
-
-	$('.scrollup').click(function(){
-		$('body, hmtl').animate({
-			scrollTop: 0
-		});
-	});
 
 	const sr = ScrollReveal({
     	distance: '60px',

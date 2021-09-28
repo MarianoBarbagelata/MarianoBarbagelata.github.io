@@ -736,27 +736,6 @@ footer span a:hover {
 	text-decoration: underline;
 }
 
-.scrollup {
-	position: fixed;
-  display: flex;
-  z-index: 999;
-  width: 3rem;
-	height: 3rem;
-	background-color: #222;
-	bottom: 4rem;
-	right: 4rem;
-	border-radius: 100%;
-	animation: pulse 2s infinite;
-	transition: all 0.5s ease;
-	cursor: pointer;
-}
-
-.scrollup i {
-	color: #35a5d5;
-	font-size: 1.5rem;
-	margin: auto;
-}
-
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 rgba(53, 165, 213, 0.99);
