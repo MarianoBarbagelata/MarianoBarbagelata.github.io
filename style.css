@@ -212,7 +212,7 @@ section .title::after {
 	transform: translateX(-50%);
 }
 
-.about, .skills, .proyects, .contact, footer {
+.about, .skills, .projects, .contact, footer {
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 80px;
 	margin-top: 40px;
@@ -472,19 +472,19 @@ section .title::after {
 }
 
 
-.proyects p {
+.projects p {
 	color: #fff;
 }
 
-.proyects text {
+.projects text {
 	color: none;
 }
 
-.proyects .title::after {
+.projects .title::after {
 	content: "Developed by me";
 }
 
-.proyects .carousel .card {
+.projects .carousel .card {
 	background: #222;
 	border-radius: 6px;
 	padding: 25px 35px;
@@ -493,11 +493,11 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.proyects .carousel .card:hover {
+.projects .carousel .card:hover {
 	background: #35a5d5;
 }
 
-.proyects .carousel .card .box{
+.projects .carousel .card .box{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -505,17 +505,17 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.proyects .carousel .card:hover .box {
+.projects .carousel .card:hover .box {
 	transform: scale(1.05);
 }
 
-.proyects .carousel .card .text {
+.projects .carousel .card .text {
 	font-size: 25px;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
 
-.proyects .carousel .card img {
+.projects .carousel .card img {
 	height: 150px;
 	width: 250px;
 	object-fit: cover;
@@ -524,7 +524,7 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.proyects a {
+.projects a {
 	display: inline-block;
 	background: #35a5d5;
 	color: #fff;
@@ -536,20 +536,20 @@ section .title::after {
 	transition: all 0.3s ease;
 }
 
-.proyects a:hover {
+.projects a:hover {
 	color: #fff;
 	background: #222;
 }
 
-.proyects .text {
+.projects .text {
 	color: #fff;
 }
 
-.proyects .carousel .card:hover img {
+.projects .carousel .card:hover img {
 	border-color: #fff;
 }
 
-.proyects i {
+.projects i {
 	align-items: center;
 	display: flex;
 }
@@ -829,7 +829,7 @@ footer span a:hover {
 		max-width: 800px;
 	}
 
-	.proyects .title::after,
+	.projects .title::after,
 	.skills .title::after {
 		bottom: -30px;
 		padding: 5px;
