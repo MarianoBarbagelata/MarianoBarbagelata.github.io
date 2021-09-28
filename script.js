@@ -63,4 +63,24 @@ $(document).ready(function(){
 	sr.reveal(`.right`,{origin: 'right'})
 	sr.reveal(`.title, .icons, .carousel, .scroll-down`,{origin: 'top'})
 	sr.reveal(`.home-content`,{origin: 'bottom'})
+
+	const $form = document.querySelector('#form')
+
+	$form.addEventListener('submit', handleSubmit)
+
+	async function handleSubmit(event) {
+		event.preventDefault()
+		const form = new FormData(this)
+		const response = await fetch(this.action, {
+			method: this.method,
+			body: form,
+			headers: {
+				'Accept': 'application/json'
+			}
+		})
+		if (response.ok) {
+			this.reset()
+			alert('Thank you for contacting me, I will respond as soon as possible. :)')
+		}
+	}
 });
