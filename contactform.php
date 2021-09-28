@@ -16,5 +16,5 @@ $case = "Mensaje enviado desde Portfolio";
 
 mail($receiver, $case, $letter);
 
-header("Location:contactform.html");
+header("Location:index.html");
 ?>
