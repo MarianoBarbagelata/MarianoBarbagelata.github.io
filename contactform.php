@@ -1,24 +1,20 @@
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$header = 'From: ' . $email . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message .= "Su e-mail es: " . $email . " \r\n";
-$message .= "Teléfono de contacto: " . $phone . " \r\n";
-$message .= "Mensaje: " . $_POST['message'] . " \r\n";
-$message .= "Enviado el: " . date('d/m/Y', time());
+$letter = "Este mensaje fue enviado por: $name \r\n";
+$letter .= "Su e-mail es: $email \r\n";
+$letter .= "Asunto: $subject \r\n";
+$letter .= "Mensaje: $message \r\n";
+$letter .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'marianoabarba@gmail.com';
-$asunto = 'Mensaje enviado desde Portfolio';
+$receiver = "marianoabarba@gmail.com";
+$case = "Mensaje enviado desde Portfolio";
 
-mail($para, $asunto, utf8_decode($message), $header);
+mail($receiver, $case, $letter);
 
-header("Location:index.html");
+header("Location:contactform.html");
 ?>
