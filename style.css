@@ -157,7 +157,7 @@ section {
   border: 2px solid #35a5d5;
   position: absolute;
   left: 50%;
-  top: 85%;
+  margin-top: 10%;
   border-radius: 50px;
   cursor: pointer;
 }
