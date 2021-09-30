@@ -736,36 +736,12 @@ footer span a:hover {
 	text-decoration: underline;
 }
 
-@keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(53, 165, 213, 0.99);
-	}
-	70% {
-		box-shadow: 0 0 0 2rem rgba(53, 165, 213, 0);
-	}
-	100% {
-		box-shadow: 0 0 0 0 rgba(53, 165, 213, 0);
-	}
-}
-
-.scrollup:hover {
-  background-color: #444;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-
 @media (max-width: 1400px) {
-	.home .max-width {
-		margin-left: 0px;
-	}
 	.skills .skills-content .icons {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-row-gap: 45px;
 		justify-content: center;
-	}
-	.scrollup {
-		right: 1rem;
 	}
 }
 
@@ -880,9 +856,9 @@ footer span a:hover {
 
 @media (max-width: 500px) {
 	.home .home-content .text-2 {
-		font-size: 50px;
+		font-size: 45px;
 	}
 	.home .home-content .text-3 {
-		font-size: 27px;
+		font-size: 25px;
 	}
 }
