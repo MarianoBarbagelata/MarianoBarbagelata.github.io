@@ -146,13 +146,18 @@ section {
 	background: none;
 }
 
+.home .max-width a {
+	justify-content: center;
+	align-items: center;
+}
+
 .scroll-down {
   height: 50px;
   width: 30px;
   border: 2px solid #35a5d5;
   position: absolute;
   left: 50%;
-  bottom: 3rem;
+  top: 85%;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -712,10 +717,6 @@ section .title::after {
 .right form .button-area button:hover {
 	color: #35a5d5;
 	background: none;
-}
-
-.message {
-	text-align: center;
 }
 
 footer {

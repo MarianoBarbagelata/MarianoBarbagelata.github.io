@@ -53,7 +53,7 @@ $(document).ready(function(){
 	});
 
 	const sr = ScrollReveal({
-    	distance: '60px',
+    	distance: '50px',
     	duration: 2500,
     	delay: 400,
     // reset: true
