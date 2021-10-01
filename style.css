@@ -161,6 +161,7 @@ section {
   border-radius: 50px;
   cursor: pointer;
 }
+
 .scroll-down::before,
 .scroll-down::after {
   content: "";
@@ -175,6 +176,7 @@ section {
   border-left: transparent;
   animation: scroll-down 1s ease-in-out infinite;
 }
+
 .scroll-down::before {
   top: 30%;
   animation-delay: 0.3s;
