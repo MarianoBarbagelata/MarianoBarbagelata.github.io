@@ -61,8 +61,8 @@ $(document).ready(function(){
 
 	sr.reveal(`.left`,{origin: 'left'})
 	sr.reveal(`.right`,{origin: 'right'})
-	sr.reveal(`.title, .icons, .carousel, .scroll-down`,{origin: 'top'})
-	sr.reveal(`.home-content`,{origin: 'bottom'})
+	sr.reveal(`.title, .icons, .carousel`,{origin: 'top'})
+	sr.reveal(`.home-content, .scroll-down`,{origin: 'bottom'})
 
 	const $form = document.querySelector('#form')
 
