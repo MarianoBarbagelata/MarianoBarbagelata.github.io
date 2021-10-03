@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Comfortaa:wght@400;500;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -25,7 +26,7 @@ section {
 	width: 100%;
 	z-index: 1000;
 	padding: 30px 0;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 	transition: all 0.3s ease;
 }
 
@@ -86,45 +87,32 @@ section {
 
 .home {
 	display: flex;
+	background: url(./assets/background.svg) no-repeat center;
 	height: 100vh;
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;
 	min-height: 500px;
-	font-family: 'Ubuntu', sans-serif;
-	background: linear-gradient(150deg, #000,  #222, #444);
-  background-size: 400% 400%;
-  animation: BgGradient 7s ease infinite;
+	font-family: 'Comfortaa', sans-serif;
 }
 
-@keyframes BgGradient {
-  0% {
-  	background-position: 0% 50%;
-  }
-  50% {
-  	background-position: 100% 50%;
-  }
-  100% {
-  	background-position: 0% 50%;
-  }
-}
 
 .home .home-content {
 	text-align: center;
 }
 
-.home .home-content .text-2 {
+.home .home-content .text-1 {
 	font-size: 75px;
 	font-weight: 600;
 	margin-left: -3px;
 }
 
-.home .home-content .text-3 {
+.home .home-content .text-2 {
 	font-size: 40px;
 	margin: 5px 0;
 }
 
-.home .home-content .text-3 span {
+.home .home-content .text-2 span {
 	color: #35a5d5;
 	font-weight: 500;
 }
@@ -164,7 +152,7 @@ section {
 
 .scroll-down::before,
 .scroll-down::after {
-  content: "";
+  content: ""; 
   position: absolute;
   top: 20%;
   left: 50%;
@@ -205,7 +193,7 @@ section .title {
 	font-weight: 500;
 	margin-bottom: 60px;
 	padding-bottom: 20px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 }
 
 section .title::after {
@@ -300,7 +288,7 @@ section .title::after {
 }
 
 .skills .title::after{
-	background: #222;
+	background: transparent;
 	content: "Programming and tools";
 }
 
@@ -313,7 +301,9 @@ section .title::after {
   height: 100%;
   place-items: center;
   color: #fff;
-  background: #222;
+  background: url(./assets/background.svg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
   padding-bottom: 40px;
 }
 
@@ -321,7 +311,6 @@ section .title::after {
   display: inline-flex;
   column-gap: 15px;
 }
-
 
 .icons a {
   margin: 0 25px;
@@ -478,7 +467,6 @@ section .title::after {
   opacity: 1;
 }
 
-
 .projects p {
 	color: #fff;
 }
@@ -492,16 +480,13 @@ section .title::after {
 }
 
 .projects .carousel .card {
-	background: #222;
+	background: url(./assets/background.svg) no-repeat center;
+	background-size: cover;
 	border-radius: 6px;
 	padding: 25px 35px;
 	text-align: center;
 	overflow: hidden;
 	transition: all 0.3s ease;
-}
-
-.projects .carousel .card:hover {
-	background: #35a5d5;
 }
 
 .projects .carousel .card .box{
@@ -533,27 +518,22 @@ section .title::after {
 
 .projects a {
 	display: inline-block;
-	background: #35a5d5;
+	background: #00001a;
 	color: #fff;
 	font-size: 15px;
 	padding: 8px 24px;
 	margin-top: 15px;
 	border-radius: 6px;
-	border: 2px solid #fff;
+	border: 2px solid #35a5d5;
 	transition: all 0.3s ease;
 }
 
 .projects a:hover {
-	color: #fff;
-	background: #222;
+	background: #35a5d5;
 }
 
 .projects .text {
 	color: #fff;
-}
-
-.projects .carousel .card:hover img {
-	border-color: #fff;
 }
 
 .projects i {
@@ -722,7 +702,9 @@ section .title::after {
 }
 
 footer {
-	background: #222;
+	background: url(./assets/background.svg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
 	padding: 15px 23px;
 	text-align: center;
 	color: #fff;
@@ -766,9 +748,11 @@ footer span a:hover {
 		display: block;
 		z-index: 999;
 	}
+
 	.menu-btn i.active:before {
 		content: "\f00d";
 	}
+
 	.navbar .menu {
 		position: fixed;
 		height: 100vh;
@@ -780,22 +764,26 @@ footer span a:hover {
 		padding-top: 80px;
 		transition: all 0.3s ease;
 	}
+
 	.navbar .menu.active {
 		left: 0;
 	}
+
 	.navbar .menu li {
 		display: block;
 	}
+
 	.navbar .menu li a {
 		display: inline-block;
 		margin: 20px 0;
 		font-size: 25px;
 	}
-	.home .home-content .text-2 {
+
+	.home .home-content .text-1 {
 		font-size: 70px;
 	}
 
-	.home .home-content .text-3 {
+	.home .home-content .text-2 {
 		font-size: 35px;
 	}
 
@@ -841,15 +829,18 @@ footer span a:hover {
 }
 
 @media (max-width: 690px) {
-	.home .home-content .text-2 {
+	.home .home-content .text-1 {
 		font-size: 60px;
 	}
-	.home .home-content .text-3 {
+
+	.home .home-content .text-2 {
 		font-size: 32px;
 	}
+
 	.home .home-content a {
 		font-size: 20px;
 	}
+
 	.skills .skills-content .icons {
 		grid-template-columns: repeat(2, 1fr);
 		grid-row-gap: 45px;
@@ -858,10 +849,11 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-	.home .home-content .text-2 {
-		font-size: 45px;
+	.home .home-content .text-1 {
+		font-size: 40px;
 	}
-	.home .home-content .text-3 {
+
+	.home .home-content .text-2 {
 		font-size: 25px;
 	}
 }
