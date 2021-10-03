@@ -202,7 +202,7 @@ section .title::after {
 	left: 50%;
 	font-size: 20px;
 	color: #35a5d5;
-	padding: 5px;
+	padding: 4px;
 	background: #fff;
 	transform: translateX(-50%);
 }
@@ -855,5 +855,9 @@ footer span a:hover {
 
 	.home .home-content .text-2 {
 		font-size: 25px;
+	}
+	
+	.contact .title::after {
+		padding: 0;
 	}
 }
