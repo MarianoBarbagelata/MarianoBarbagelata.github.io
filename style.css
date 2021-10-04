@@ -746,15 +746,15 @@ footer span a:hover {
 	}
 
 	.scroll-down span:nth-child(1) {
-		transform: translate(-85px, -85px);
+		transform: translate(-100px, -100px);
 	}
 
 	.scroll-down span:nth-child(2) {
-		transform: translate(-70px, -70px);
+		transform: translate(-85px, -85px);
 	}
 
 	.scroll-down span:nth-child(3) {
-		transform: translate(-55px, -55px);
+		transform: translate(-70px, -70px);
 	}
 }
 
