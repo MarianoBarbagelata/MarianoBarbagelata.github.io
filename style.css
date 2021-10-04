@@ -159,6 +159,7 @@ section {
 	height: 100%;
 	border-bottom: 2px solid #fff;
 	border-right: 2px solid #fff;
+	border-radius: 2px;
 	animation: animate 1.5s linear infinite;
 	opacity: 0;
 }
