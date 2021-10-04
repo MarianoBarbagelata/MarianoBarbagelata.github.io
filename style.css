@@ -141,13 +141,12 @@ section {
 
 .scroll-down {
 	position: absolute;
-	margin-top: 10%;
 	left: 50%;
 	width: 40px;
 	height: 40px;
 	margin: 0;
 	padding: 0;
-	transform: translateY(150%) translateX(-50%) rotate(45deg);
+	transform: translateY(150px) translateX(-50%) rotate(45deg);
 }
 
 .scroll-down span {
@@ -744,6 +743,18 @@ footer span a:hover {
 	.about .about-content .left img {
 		height: 350px;
 		width: 350px;
+	}
+
+	.scroll-down span:nth-child(1) {
+		transform: translate(-75px, -75px);
+	}
+
+	.scroll-down span:nth-child(2) {
+		transform: translate(-60px, -60px);
+	}
+
+	.scroll-down span:nth-child(3) {
+		transform: translate(-45px, -45px);
 	}
 }
 
