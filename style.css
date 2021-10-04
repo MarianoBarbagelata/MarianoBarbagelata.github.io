@@ -147,7 +147,7 @@ section {
 	height: 40px;
 	margin: 0;
 	padding: 0;
-	transform: translateY(50px) translateX(-50%) rotate(45deg);
+	transform: translateY(150%) translateX(-50%) rotate(45deg);
 }
 
 .scroll-down span {
