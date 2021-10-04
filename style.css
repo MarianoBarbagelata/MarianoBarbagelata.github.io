@@ -740,21 +740,25 @@ footer span a:hover {
 }
 
 @media (max-width: 1104px) {
+	.home .home-content {
+		margin-top: -110px;
+	}
+
 	.about .about-content .left img {
 		height: 350px;
 		width: 350px;
 	}
 
 	.scroll-down span:nth-child(1) {
-		transform: translate(-100px, -100px);
-	}
-
-	.scroll-down span:nth-child(2) {
 		transform: translate(-85px, -85px);
 	}
 
-	.scroll-down span:nth-child(3) {
+	.scroll-down span:nth-child(2) {
 		transform: translate(-70px, -70px);
+	}
+
+	.scroll-down span:nth-child(3) {
+		transform: translate(-55px, -55px);
 	}
 }
 
