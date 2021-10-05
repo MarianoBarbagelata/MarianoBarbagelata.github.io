@@ -5,16 +5,23 @@ $(document).ready(function(){
 		} else {
 			$('.navbar').removeClass("sticky");
 		}
-		if(this.scroll > 500){
-			$('.scroll-up-btn').addClass("show");
-		} else {
-			$('.scroll-up-btn').removeClass("show");
-		}
 	});
 
-	$('.scroll-up-btn').click(function(){
-		$('html').animate({scrollTop: 0});
-	});
+	let wrapper = document.querySelectorAll(".wrapper");
+
+	function showScroll() {
+		let scrollTop = document.documentElement.scrollTop;
+		for(var i = 0; i < wrapper.length; i++) {
+			let animateHeight = wrapper[i].offsetTop;
+			if(animateHeight - 100 < scrollTop) {
+				wrapper[i].style.opacity = 1;
+			} else {
+				wrapper[i].style.opacity = 0;
+			}
+		}
+	}
+
+	window.addEventListener('scroll', showScroll);
 
 	$('.menu-btn').click(function(){
 		$('.navbar .menu').toggleClass("active");
@@ -62,7 +69,7 @@ $(document).ready(function(){
 	sr.reveal(`.left`,{origin: 'left'})
 	sr.reveal(`.right`,{origin: 'right'})
 	sr.reveal(`.title, .icons, .carousel`,{origin: 'top'})
-	sr.reveal(`.home-content, .scroll-down`,{origin: 'bottom'})
+	sr.reveal(`.home-content, .scroll-down, .wrapper`,{origin: 'bottom'})
 
 	const $form = document.querySelector('#form')
 
