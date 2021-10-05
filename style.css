@@ -641,6 +641,7 @@ section .title::after {
 
 .projects a:hover {
 	background: transparent;
+	color: #35a5d5;
 }
 
 .projects .text {
