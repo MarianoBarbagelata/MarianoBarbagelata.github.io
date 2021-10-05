@@ -965,7 +965,7 @@ footer span a:hover {
 		width: 50px;
 	}
 
-	.wrapper .icon span i {
+	.wrapper .icon span a {
 		line-height: 50px;
 	}
 }
