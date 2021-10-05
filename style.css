@@ -629,7 +629,7 @@ section .title::after {
 
 .projects a {
 	display: inline-block;
-	background: #00001a;
+	background: #35a5d5;
 	color: #fff;
 	font-size: 15px;
 	padding: 8px 24px;
@@ -640,7 +640,7 @@ section .title::after {
 }
 
 .projects a:hover {
-	background: #35a5d5;
+	background: transparent;
 }
 
 .projects .text {
