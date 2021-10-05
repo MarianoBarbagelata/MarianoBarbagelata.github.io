@@ -24,7 +24,7 @@ section {
 .navbar {
 	position: fixed;
 	width: 100%;
-	z-index: 1000;
+	z-index: 5000;
 	padding: 30px 0;
 	font-family: 'Comfortaa', sans-serif;
 	transition: all 0.3s ease;
@@ -90,7 +90,7 @@ section {
   position: fixed;
   bottom: 10%;
   right: 0;
-  z-index: 5000;
+  z-index: 4000;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -104,7 +104,7 @@ section {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  z-index: 2;
+  z-index: 4000;
   padding: 10px;
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -116,7 +116,7 @@ section {
   background: #fff;
   border-radius: 50%;
   position: relative;
-  z-index: 2;
+  z-index: 4000;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: 0.4s;
   color: #35a5d5;
@@ -879,7 +879,7 @@ footer span a:hover {
 @media (max-width: 947px) {
 	.menu-btn {
 		display: block;
-		z-index: 999;
+		z-index: 1000;
 	}
 
 	.menu-btn i.active:before {
