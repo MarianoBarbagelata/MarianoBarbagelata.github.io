@@ -395,17 +395,34 @@ section .title::after {
 	transition: color .3s ease;
 }
 
-.skills .title::before {
-	background: #fff;
-}
-
-.skills .title::after{
+.skills .title::after {
 	background: transparent;
 	content: "Programming and tools";
 }
 
 .skills-content {
-	padding-bottom: 30px;
+	flex-direction: column;
+}
+
+.skills-content .icons {
+	display: grid;
+	grid-row-gap: 45px;
+	grid-column-gap: 20px;
+}
+
+.skills-content .icons-1 {
+	padding-bottom: 55px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.skills-content .icons-2 {
+	padding-bottom: 55px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-content .icons-3 {
+	padding-bottom: 20px;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .skills {
@@ -419,9 +436,12 @@ section .title::after {
   padding-bottom: 40px;
 }
 
-.icons {
-  display: inline-flex;
-  column-gap: 15px;
+.skills .subtitles {
+	font-size: 20px;
+	color: #35a5d5;
+	font-family: 'Comfortaa', sans-serif;
+	font-weight: 400;
+	padding-bottom: 35px;
 }
 
 .icons a {
@@ -450,12 +470,11 @@ section .title::after {
   width: 100%;
   height: 100%;
   border: 1px solid #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: all .8s;
 }
 
-.icons a .layer span.fab,
-.icons a .layer span.fas {
+.icons a .layer span.fab, .icons a .layer span.fas {
   font-size: 45px;
   line-height: 70px;
   text-align: center;
@@ -465,12 +484,12 @@ section .title::after {
   opacity: 0.2;
 }
 
-.icons a:hover .layer span:nth-child(2) {
+.icons a:hover .layer span:nth-child(2){
   opacity: 0.4;
   transform: translate(5px, -5px);
 }
 
-.icons a:hover .layer span:nth-child(3) {
+.icons a:hover .layer span:nth-child(3){
   opacity: 0.6;
   transform: translate(10px, -10px);
 }
@@ -485,84 +504,104 @@ section .title::after {
   transform: translate(20px, -20px);
 }
 
-.icons a:nth-child(1) .layer span,
-.icons a:nth-child(1) .text {
+.icons-1 a:nth-child(1) .layer span,
+.icons-1 a:nth-child(1) .text {
   color: #e15525;
   border-color: #e15525;
 }
 
-.icons a:nth-child(2) .layer span,
-.icons a:nth-child(2) .text {
+.icons-1 a:nth-child(2) .layer span,
+.icons-1 a:nth-child(2) .text {
   color: #0c68ba;
   border-color: #0c68ba;
 }
 
-.icons a:nth-child(3) .layer span,
-.icons a:nth-child(3) .text {
+.icons-1 a:nth-child(3) .layer span,
+.icons-1 a:nth-child(3) .text {
 	color: #f7df1e;
   border-color: #f7df1e;
 }
 
-.icons a:nth-child(4) .layer span,
-.icons a:nth-child(4) .text {
+.icons-1 a:nth-child(4) .layer span,
+.icons-1 a:nth-child(4) .text {
 	color: #61dafb;
   border-color: #61dafb;
 }
 
-.icons a:nth-child(5) .layer span,
-.icons a:nth-child(5) .text {
+.icons-2 a:nth-child(1) .layer span,
+.icons-2 a:nth-child(1) .text {
+	color: #777bb3;
+  border-color: #777bb3;
+}
+
+.icons-2 a:nth-child(2) .layer span,
+.icons-2 a:nth-child(2) .text {
 	color: #e76e00;
   border-color: #e76e00;
 }
 
-.icons a:nth-child(6) .layer span,
-.icons a:nth-child(6) .text {
+.icons-2 a:nth-child(3) .layer span,
+.icons-2 a:nth-child(3) .text {
 	color: #366a96;
   border-color: #366a96;
 }
 
-.icons a:nth-child(7) .layer span,
-.icons a:nth-child(7) .text {
-	color: #f05033;
-  border-color: #f05033;
+.icons-3 a:nth-child(1) .layer span,
+.icons-3 a:nth-child(1) .text {
+  color: #f05133;
+  border-color: #f05133;
 }
 
-.icons a:nth-child(8) .layer span,
-.icons a:nth-child(8) .text {
+.icons-3 a:nth-child(2) .layer span,
+.icons-3 a:nth-child(2) .text {
   color: #fff;
   border-color: #fff;
 }
 
-.icons a:hover:nth-child(1) .layer span {
+.icons-3 a:nth-child(3) .layer span,
+.icons-3 a:nth-child(3) .text {
+  color: #8012f9;
+  border-color: #8012f9;
+}
+
+.icons-1 a:hover:nth-child(1) .layer span {
   box-shadow: -1px 1px 3px #e15525;
 }
 
-.icons a:hover:nth-child(2) .layer span {
+.icons-1 a:hover:nth-child(2) .layer span {
   box-shadow: -1px 1px 3px #0c68ba;
 }
 
-.icons a:hover:nth-child(3) .layer span {
+.icons-1 a:hover:nth-child(3) .layer span {
   box-shadow: -1px 1px 3px #f7df1e;
 }
 
-.icons a:hover:nth-child(4) .layer span {
+.icons-1 a:hover:nth-child(4) .layer span {
   box-shadow: -1px 1px 3px #61dafb;
 }
 
-.icons a:hover:nth-child(5) .layer span {
+.icons-2 a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px #777bb3;
+}
+
+.icons-2 a:hover:nth-child(2) .layer span {
   box-shadow: -1px 1px 3px #e76e00;
 }
 
-.icons a:hover:nth-child(6) .layer span {
+.icons-2 a:hover:nth-child(3) .layer span {
   box-shadow: -1px 1px 3px #366a96;
 }
 
-.icons a:hover:nth-child(7) .layer span {
-  box-shadow: -1px 1px 3px #f05033;
+.icons-3 a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px #f05133;
 }
 
-.icons a:hover:nth-child(8) .layer span {
+.icons-3 a:hover:nth-child(2) .layer span {
   box-shadow: -1px 1px 3px #fff;
+}
+
+.icons-3 a:hover:nth-child(3) .layer span {
+  box-shadow: -1px 1px 3px #8012f9;
 }
 
 .icons a .text {
