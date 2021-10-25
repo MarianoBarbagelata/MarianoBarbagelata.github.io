@@ -284,6 +284,10 @@ section .title::after {
 	transform: translateX(-50%);
 }
 
+.about, .projects, .contact {
+	background-color: #fff;
+}
+
 .about, .skills, .projects, .contact, footer {
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 80px;
@@ -308,6 +312,9 @@ section .title::after {
 	width: 400px;
 	object-fit: cover;
 	border-radius: 6px;
+	box-shadow: 8px 8px 13px -1px rgba(69,69,69,0.49);
+	-webkit-box-shadow: 8px 8px 13px -1px rgba(69,69,69,0.49);
+	-moz-box-shadow: 8px 8px 13px -1px rgba(69,69,69,0.49);
 }
 
 .about .about-content .left {
@@ -618,12 +625,8 @@ section .title::after {
   opacity: 1;
 }
 
-.projects p {
+.projects p, .projects .text {
 	color: #fff;
-}
-
-.projects text {
-	color: none;
 }
 
 .projects .title::after {
@@ -654,7 +657,7 @@ section .title::after {
 .projects .carousel .card .text {
 	font-size: 25px;
 	font-weight: 500;
-	margin: 10px 0 7px 0;
+	margin-bottom: 10px;
 }
 
 .projects .carousel .card img {
@@ -663,6 +666,7 @@ section .title::after {
 	object-fit: cover;
 	border-radius: 10px;
 	border: 3px solid #35a5d5;
+	margin-bottom: 15px;
 	transition: all 0.3s ease;
 }
 
@@ -672,7 +676,7 @@ section .title::after {
 	color: #fff;
 	font-size: 15px;
 	padding: 8px 24px;
-	margin-top: 15px;
+	margin-top: 10px;
 	border-radius: 6px;
 	border: 2px solid #35a5d5;
 	transition: all 0.3s ease;
@@ -683,13 +687,37 @@ section .title::after {
 	color: #35a5d5;
 }
 
-.projects .text {
-	color: #fff;
+.projects i {
+	font-size: 30px;
+	padding: 8px;
 }
 
-.projects i {
-	align-items: center;
-	display: flex;
+.projects .fa-java {
+	color: #e76e00;
+}
+
+.projects .fa-html5 {
+	color: #e15525;
+}
+
+.projects .fa-css3-alt {
+	color: #0c68ba;
+}
+
+.projects .fa-js-square {
+	color: #f7df1e;
+}
+
+.projects .fa-python {
+	color: #366a96;
+}
+
+.projects .fa-php {
+	color: #777bb3;
+}
+
+.projects .fa-database {
+	color: #fff;
 }
 
 .owl-dots {
@@ -765,38 +793,38 @@ section .title::after {
 }
 
 .contact .contact-content .row i {
-    font-size: 25px;
-    color: #35a5d5;
-    padding-top: 20px;
+  font-size: 25px;
+  color: #35a5d5;
+  padding-top: 20px;
 }
 
 .contact .contact-content .info .head {
-    font-weight: 500;
-    padding-top: 20px;
+  font-weight: 500;
+  padding-top: 20px;
 }
 
 .contact .contact-content .info .sub-title {
-    color: #333;
+  color: #333;
 }
 
 .contact .right form .fields {
-    display: flex;
+  display: flex;
 }
 
 .contact .right form .field,
 .contact .right form .fields .field {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .contact .right form .textarea {
-    height: 80px;
-    width: 100%;
+  height: 80px;
+  width: 100%;
 }
 
 .contact .right form .name {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .contact .right form .email {
@@ -818,7 +846,7 @@ section .title::after {
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
-    border-color: #b3b3b3;
+  border-color: #b3b3b3;
 }
 
 .contact .right form .textarea textarea {
