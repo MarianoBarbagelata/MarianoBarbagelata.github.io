@@ -3,7 +3,6 @@
 :root {
 	--lightblue-color: #35a5d5;
 	--white-color: #fff;
-	--svg-background: url(./background.svg) no-repeat center;
 }
 
 * {
@@ -160,7 +159,7 @@ section {
 
 .home {
 	display: flex;
-	background: var(--svg-background);
+	background: url(./background.svg) no-repeat center;
 	height: 100vh;
 	background-size: cover;
 	background-attachment: fixed;
@@ -445,7 +444,7 @@ section .title::after {
   height: 100%;
   place-items: center;
   color: var(--white-color);
-  background: var(--svg-background);
+  background: url(./background.svg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
   padding-bottom: 40px;
@@ -642,7 +641,7 @@ section .title::after {
 }
 
 .projects .carousel .card {
-	background: var(--svg-background);
+	background: url(./background.svg) center;
 	border-radius: 6px;
 	padding: 25px 35px;
 	text-align: center;
@@ -889,7 +888,7 @@ section .title::after {
 }
 
 footer {
-	background: var(--svg-background);
+	background: url(./background.svg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 15px 23px;
