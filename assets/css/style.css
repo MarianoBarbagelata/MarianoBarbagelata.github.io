@@ -658,7 +658,7 @@ section .title::after {
 }
 
 .projects .carousel .card:hover .box {
-	transform: scale(1.05);
+	transform: scale(1.06);
 }
 
 .projects .carousel .card .text {
@@ -682,8 +682,8 @@ section .title::after {
 	background: var(--lightblue-color);
 	color: var(--white-color);
 	font-size: 15px;
-	padding: 8px 24px;
-	margin-top: 10px;
+	padding: 6px 18px;
+	margin-top: 8px;
 	border-radius: 6px;
 	border: 2px solid var(--lightblue-color);
 	transition: all 0.3s ease;
